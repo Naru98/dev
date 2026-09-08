@@ -1,0 +1,3 @@
+const menu=document.querySelector(".menu-btn"),links=document.querySelector(".links");
+menu?.addEventListener("click",()=>{links.style.display=links.style.display==="flex"?"none":"flex";if(innerWidth<=850)links.style.cssText="position:absolute;top:76px;left:0;right:0;background:#f6f5f1;padding:20px;display:flex;flex-direction:column;align-items:flex-start;border-bottom:1px solid #ddd";});
+document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>{if(innerWidth<=850)links.style.display="none"}));
